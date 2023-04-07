@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+:root{
+  --primary-color:#6E07F3;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* ABOUT NAV */
+
+.aboutNavbar{
+  padding: 15px 0;
+}
+
+.barsBtn{
+  display: none;
+}
+
+.aboutNavbarItems{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutNavLeft .personIcon{
+  font-size: 2rem;
+  color:var(--primary-color) ;
+}
+
+.aboutNavRight{
+  display: flex;
+  align-items: center;
+}
+
+.aboutList{
+  position: relative;
+}
+
+.aboutDot{
+  background-color: var(--primary-color);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.link{
+  margin: 0 15px;
+  color: var(--primary-color);
+  font-size: 1.05rem;
+  display: inline-block;
+  position: relative;
+}
+
+.link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* ABOUT INFO */
+
+.aboutInfoItems{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutInfoItems img{
+  width: 250px;
+  height: 350px;
+  border-radius: 100px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+}
+
+.aboutInfoParagraph p{
+  font-size: 1.3rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Ribbon */
+
+.ribbon {
+  font-size: 1.5rem !important;
+ 
+  width: 33%;
+     
+  position: relative;
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 2rem; /* Adjust to suit */
+  margin: 2rem auto 3rem; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+ }
+ .ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid var(--primary-color);
+  z-index: -1;
+ }
+ .ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+ }
+ .ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+ }
+ .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #4b03a8 transparent transparent transparent;
+  bottom: -1em;
+ }
+ .ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+ }
+ .ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+ }
+
+ /* PROJECTS NAV */
+
+ .projectsNavbar{
+  padding: 15px 0;
+}
+
+.projectsNavbarItems{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectsNavLeft .folderIcon{
+  font-size: 2rem;
+  color:var(--primary-color) ;
+}
+
+.projectsNavRight{
+  display: flex;
+  align-items: center;
+}
+
+.projectsList{
+  position: relative;
+}
+
+.projectsDot{
+  background-color: var(--primary-color);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.link{
+  margin: 0 15px;
+  color: var(--primary-color);
+  font-size: 1.05rem;
+  display: inline-block;
+  position: relative;
+}
+
+.link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* PROJECTS INFO */
+
+.projectsInfo{
+  padding: 30px 0;
+}
+
+.project{
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--primary-color);
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+.projectImg img{
+  width: 350px;
+  margin:0 20px;
+}
+
+.projectText h2{
+  color: var(--primary-color);
+  margin: 5px 0;
+}
+
+.projectText p{
+  line-height: 1.7;
+}
+
+.socialLinks{
+  color: var(--primary-color);
+}
+
+.socialIcon{
+  font-size: 1.5rem;
+  margin: 5px;
+  color: var(--primary-color);
+}
+
+/* CONTACT */
+
+.contactNavbar{
+  padding: 15px 0;
+}
+
+.contactNavbarItems{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactNavLeft .contactIcon{
+  font-size: 2rem;
+  color:var(--primary-color) ;
+}
+
+.contactNavRight{
+  display: flex;
+  align-items: center;
+}
+
+.contactList{
+  position: relative;
+}
+
+.contactDot{
+  background-color: var(--primary-color);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.link{
+  margin: 0 15px;
+  color: var(--primary-color);
+  font-size: 1.05rem;
+  display: inline-block;
+  position: relative;
+}
+
+.link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* CONTACT INFO */
+
+.contactInfoItems{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contactInfoItems h1{
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.contactBox{
+  border: 1px solid var(--primary-color);
+  width: 50%;
+}
+
+.contactBox h2{
+  margin: 10px 0;
+  font-weight: 300;
+  color: var(--primary-color);
+}
+
+.emailLink{
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+.contactBox .emailMe{
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  padding: 10px 40px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.contactBox .emailMe:hover{
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.contactBox p{
+  color: var(--primary-color);
+  font-size: 0.7rem;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.contactLinks a{
+  color: var(--primary-color);
+  margin: 0 15px;
+  font-size: 2rem;
+}
+
+/* MOBILE NAVBAR */
+
+.mobileNavbar{
+  position: absolute;
+  top: -100vh;
+  left: 0;
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.mobileNavbar.show{
+  transform: translateY(100vh);
+}
+
+.mobileNavbarItems{
+  display: flex;
+  flex-direction:  column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.mobileNavbarItems li{
+  margin: 20px 0;
+}
+
+.mobileNavbarItems li .mobileLink{
+  color: #fff;
+  font-size: 2rem;
+}
+
+.closeMobileNavBtn{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* UTILITY */
+
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  overflow: hidden;
+}
+
+@media(max-width: 968px){
+  .project{
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 868px){
+  .ribbon{
+    font-size: 1rem !important;
+    width: 50%;
+  }
+
+  .aboutInfoParagraph p{
+    width: 100%;
+  }
+}
+
+@media(max-width: 768px){
+  .aboutNavRight{
+    display: none;
+  }
+
+  .projectsNavRight{
+    display: none;
+  }
+
+  .contactNavRight{
+    display: none;
+  }
+
+  .contactInfoItems h1{
+    font-size: 1.75rem;
+  }
+
+  .barsBtn{
+    display: block;
+  }
+
+  .barsBtn button{
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+
+  .mobileNavbar{
+    display: block;
+  }
+}
