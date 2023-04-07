@@ -92,6 +92,10 @@ a{
 
 /* ABOUT INFO */
 
+.aboutInfo{
+  margin-top: 40px;
+}
+
 .aboutInfoItems{
   display: flex;
   flex-direction: column;
