@@ -9,7 +9,7 @@ const AboutInfo = () => {
             <motion.img 
             animate={{scale: 1}} 
             initial={{scale: 0}} 
-            transition={{duration: 0.5}}
+            transition={{duration: 0.5, delay: 0.3}}
             src={AboutMe} 
             alt="" />
             <motion.h1 
@@ -22,7 +22,7 @@ const AboutInfo = () => {
             <motion.div 
             animate={{scale: 1}} 
             initial={{scale: 0}} 
-            transition={{duration: 0.5}}
+            transition={{duration: 0.5, delay: 0.3}}
             className="aboutInfoParagraph">
                 <p>Hi, my name is Darion Jones! I am a front end Developer from Stillwater, Oklahoma. I love to learn and build complex web applications!</p>
             </motion.div>
