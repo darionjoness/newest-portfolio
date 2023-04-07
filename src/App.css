@@ -90,6 +90,17 @@ a{
   transform-origin: bottom left;
 }
 
+.resumeBtn{
+  border: 1px solid var(--primary-color);
+  padding: 5px 10px;
+  color: var(--primary-color);
+}
+
+.resumeBtn:hover{
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
 /* ABOUT INFO */
 
 .aboutInfo{

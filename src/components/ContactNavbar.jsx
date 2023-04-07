@@ -22,7 +22,7 @@ const ContactNavbar = ({ onClick }) => {
                     <Link className='link' to={'/contact'}>Contact</Link>
                 </li>
                 <li>
-                    <Link target={'_blank'} className='link' to={'https://docs.google.com/document/d/1GZRPLZucZDs9_hNgdt8xMm1L76ja677a-3vIdDZyZGM/edit?usp=sharing'}>Resume</Link>
+                    <Link target={'_blank'} className='resumeBtn' to={'https://docs.google.com/document/d/1GZRPLZucZDs9_hNgdt8xMm1L76ja677a-3vIdDZyZGM/edit?usp=sharing'}>Resume</Link>
                 </li>
             </div>
             <div className="barsBtn">

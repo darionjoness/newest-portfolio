@@ -16,7 +16,7 @@ const MobileNavbar = ({ toggleMobileNav, onClick, hideMobileNav }) => {
                 <Link onClick={hideMobileNav} className='mobileLink' to={'/contact'}>Contact</Link>
             </li>
             <li>
-                <Link target={'_blank'} onClick={hideMobileNav} to={'https://docs.google.com/document/d/1GZRPLZucZDs9_hNgdt8xMm1L76ja677a-3vIdDZyZGM/edit?usp=sharing'} className='mobileLink'>Resume</Link>
+                <Link target={'_blank'} onClick={hideMobileNav} to={'https://docs.google.com/document/d/1GZRPLZucZDs9_hNgdt8xMm1L76ja677a-3vIdDZyZGM/edit?usp=sharing'} className='resumeBtn'>Resume</Link>
             </li>
             <button onClick={onClick} className='closeMobileNavBtn'><AiOutlineClose /></button>
         </div>
