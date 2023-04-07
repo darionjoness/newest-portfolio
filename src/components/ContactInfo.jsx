@@ -9,7 +9,7 @@ const ContactInfo = () => {
             <div className="contactBox">
                 <h2>Want to connect?</h2>
                 <div className="emailLink">
-                    <a className='emailMe' href=''>👋🏼 Email Me</a>
+                    <a className='emailMe' href='mailto: darionjones2555@gmail.com'>👋🏼 Email Me</a>
                 </div>
                 <p>darionjones2555@gmail.com</p>
                 <div className="contactLinks">
