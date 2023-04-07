@@ -13,7 +13,7 @@ const AboutInfo = () => {
             src={AboutMe} 
             alt="" />
             <motion.h1 
-            transition={{duration: 0.5}} 
+            transition={{duration: 0.6}} 
             initial={{width: '0%'}} 
             animate={{width: '40%'}} 
             className="ribbon">
