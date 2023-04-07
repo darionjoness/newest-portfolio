@@ -109,6 +109,7 @@ a{
   height: 350px;
   border-radius: 100px;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+  margin: 10px;
 }
 
 .aboutInfoParagraph p{
