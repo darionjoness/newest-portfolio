@@ -416,7 +416,7 @@ a{
   width: 100%;
   height: 100%;
   display: none;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .mobileNavbar.show{
@@ -454,6 +454,19 @@ a{
 .mobileResumeBtn{
   color: #fff;
   font-size: 2rem;
+}
+
+.mobileSocialLinks{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+}
+
+.mobileSocialLinks a{
+  color: #fff;
+  margin: 0 10px;
 }
 
 
