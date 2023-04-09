@@ -11,7 +11,7 @@ const ProjectsInfo = () => {
         <div className="projectsInfoItems container">
             <motion.div 
             animate={{x: 0}}
-            initial={{x: -1000}}
+            initial={{x: -1400}}
             transition={{duration: 0.7}}
             className="project">
                 <div className="projectImg">
@@ -32,9 +32,9 @@ const ProjectsInfo = () => {
                 </div>
             </motion.div>
             <motion.div 
-            initial={{x: 1000}}
+            initial={{x: 1400}}
             animate={{x: 0}}
-            transition={{duration: 0.7}}
+            transition={{duration: 0.7, delay: 0.4}}
             className="project">
                 <div className="projectText">
                     <h2>Disney Plus Rebuild</h2>
@@ -54,9 +54,9 @@ const ProjectsInfo = () => {
                 </div>
             </motion.div>
             <motion.div 
-            initial={{x: -1000}}
+            initial={{x: -1400}}
             animate={{x: 0}}
-            transition={{duration: 0.7}}
+            transition={{duration: 0.7, delay: 0.8}}
             className="project">
             <div className="projectImg">
                     <img src={timsStore} alt="" />
