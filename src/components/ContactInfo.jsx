@@ -7,7 +7,7 @@ const ContactInfo = () => {
     <div className='contactInfo'>
         <div className="contactInfoItems">
             <motion.h1
-            initial={{x: -1000}}
+            initial={{x: -1200}}
             animate={{x: 0}}
             transition={{duration: 0.7, delay: 0.3}}
             >Get in touch with me!</motion.h1>
