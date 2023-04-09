@@ -1,7 +1,7 @@
 import React from 'react'
-import CryptoPrice from './img/newCryptoPrice.png'
-import disneyPlusRebuild from './img/disneyPlusRebuild.png'
-import timsStore from './img/tims-store.png'
+import CryptoPrice from './img/newCryptoPrice-2.png'
+import disneyPlusRebuild from './img/disneyPlusRebuild-2.png'
+import timsStore from './img/tims-store-2.png'
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from 'framer-motion';
 

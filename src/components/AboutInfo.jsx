@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutMe from './img/aboutMe.jpg'
+import AboutMe from './img/aboutMe-2.jpg'
 import { motion } from 'framer-motion'
 
 const AboutInfo = () => {
