@@ -3,12 +3,17 @@ import CryptoPrice from './img/newCryptoPrice.png'
 import disneyPlusRebuild from './img/disneyPlusRebuild.png'
 import timsStore from './img/tims-store.png'
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
+import { motion } from 'framer-motion';
 
 const ProjectsInfo = () => {
   return (
     <div className='projectsInfo'>
         <div className="projectsInfoItems container">
-            <div className="project">
+            <motion.div 
+            animate={{x: 0}}
+            initial={{x: -1000}}
+            transition={{duration: 0.7}}
+            className="project">
                 <div className="projectImg">
                     <img src={CryptoPrice} alt="" />
                 </div>
@@ -25,8 +30,12 @@ const ProjectsInfo = () => {
                         </a>
                     </div>
                 </div>
-            </div>
-            <div className="project">
+            </motion.div>
+            <motion.div 
+            initial={{x: 1000}}
+            animate={{x: 0}}
+            transition={{duration: 0.7}}
+            className="project">
                 <div className="projectText">
                     <h2>Disney Plus Rebuild</h2>
                     <p>This is a exact rebuild of the Disney Plus home page in April of 2022. Disney Plus changes there site often so it may not be the exact same to this day.</p>
@@ -43,8 +52,12 @@ const ProjectsInfo = () => {
                 <div className="projectImg">
                     <img src={disneyPlusRebuild} alt="" />
                 </div>
-            </div>
-            <div className="project">
+            </motion.div>
+            <motion.div 
+            initial={{x: -1000}}
+            animate={{x: 0}}
+            transition={{duration: 0.7}}
+            className="project">
             <div className="projectImg">
                     <img src={timsStore} alt="" />
                 </div>
@@ -61,7 +74,7 @@ const ProjectsInfo = () => {
                         </a>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     </div>
   )

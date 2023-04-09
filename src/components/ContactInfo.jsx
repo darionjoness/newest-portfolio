@@ -1,12 +1,21 @@
 import React from 'react'
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { motion } from 'framer-motion';
 
 const ContactInfo = () => {
   return (
     <div className='contactInfo'>
         <div className="contactInfoItems">
-            <h1>Get in touch with me!</h1>
-            <div className="contactBox">
+            <motion.h1
+            initial={{x: -1000}}
+            animate={{x: 0}}
+            transition={{duration: 0.7, delay: 0.3}}
+            >Get in touch with me!</motion.h1>
+            <motion.div
+            initial={{scale: 0}}
+            animate={{scale: 1}} 
+            transition={{duration: 0.5}}
+            className="contactBox">
                 <h2>Want to connect?</h2>
                 <div className="emailLink">
                     <a className='emailMe' href='mailto: darionjones2555@gmail.com'>👋🏼 Email Me</a>
@@ -20,7 +29,7 @@ const ContactInfo = () => {
                         <AiFillGithub />
                     </a>
                 </div>
-            </div>
+            </motion.div>
         </div>
     </div>
   )
