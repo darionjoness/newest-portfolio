@@ -1,7 +1,4 @@
 import React from 'react'
-import CryptoPrice from './img/newCryptoPrice.png'
-import disneyPlusRebuild from './img/disneyPlusRebuild.png'
-import timsStore from './img/tims-store.png'
 import { AiFillFolder } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 import { HiBars2 } from "react-icons/hi2";
