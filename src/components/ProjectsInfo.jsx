@@ -1,5 +1,6 @@
 import React from 'react'
 import CryptoPrice from './img/newCryptoPrice-2.png'
+import hospitalDashboard from './img/hospital-dashboard.png'
 import disneyPlusRebuild from './img/disneyPlusRebuild-2.png'
 import timsStore from './img/tims-store-2.png'
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
@@ -32,10 +33,35 @@ const ProjectsInfo = () => {
                 </div>
             </motion.div>
             <motion.div 
+            animate={{x: 0}}
             initial={{x: 1400}}
+            transition={{duration: 0.7}}
+            className="project">
+                <div className="projectText">
+                    <h2>Hospital Dashboard</h2>
+                    <p>Hospital dashboard is a dashboard app that shows information about current patients in the hospital, you can click on a patient to view more information about that patient.</p>
+                    <p>Tech Used: React, Typescript, Redux Toolkit</p>
+                    <div className="socialLinks">
+                        <a target={'_blank'} href="https://darions-hospital-dashboard.netlify.app/">
+                            <AiFillEye className='socialIcon' />
+                        </a>
+                        <a target={'_blank'} href="https://github.com/darionjoness/HospitalDashboard">
+                        <AiFillGithub className='socialIcon' />
+                        </a>
+                    </div>
+                </div>
+                <div className="projectImg">
+                    <img src={hospitalDashboard} alt="" />
+                </div>
+            </motion.div>
+            <motion.div 
+            initial={{x: -1400}}
             animate={{x: 0}}
             transition={{duration: 0.7, delay: 0.4}}
             className="project">
+                <div className="projectImg">
+                    <img src={disneyPlusRebuild} alt="" />
+                </div>
                 <div className="projectText">
                     <h2>Disney Plus Rebuild</h2>
                     <p>This is a exact rebuild of the Disney Plus home page in April of 2022. Disney Plus changes there site often so it may not be the exact same to this day.</p>
@@ -49,18 +75,12 @@ const ProjectsInfo = () => {
                         </a>
                     </div>
                 </div>
-                <div className="projectImg">
-                    <img src={disneyPlusRebuild} alt="" />
-                </div>
             </motion.div>
             <motion.div 
-            initial={{x: -1400}}
+            initial={{x: 1400}}
             animate={{x: 0}}
             transition={{duration: 0.7, delay: 0.8}}
             className="project">
-            <div className="projectImg">
-                    <img src={timsStore} alt="" />
-                </div>
                 <div className="projectText">
                     <h2>Tim's Store</h2>
                     <p>Tim's Store is a store that sells clothing, jewelry, beauty products & more! Use the filters to find the items you want, click on the item you want then when the modal pops up you can go ahead and add it to your cart. You can view your cart at anytime by clicking on the cart icon. When your done shopping, click checkout and you will be asked to fill out your information. After your done place the order and you will get confirmation!</p>
@@ -73,6 +93,9 @@ const ProjectsInfo = () => {
                             <AiFillGithub className='socialIcon' />
                         </a>
                     </div>
+                </div>
+                <div className="projectImg">
+                    <img src={timsStore} alt="" />
                 </div>
             </motion.div>
         </div>
